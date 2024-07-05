@@ -1,0 +1,373 @@
+#app {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 145px;
+    &.hide {
+        opacity: 0;
+        pointer-events: none;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 60px;
+        background: linear-gradient(180deg, #1c1a3f 0%, rgba(255, 255, 255, 0) 100%);
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    .boosts_btn {
+        position: absolute;
+        bottom: 100px;
+        left: 10px;
+        right: calc(50% + 8px);
+        width: auto;
+        z-index: 1;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        //color: #ffbe16;
+        //background: rgba(255, 190, 21, .5);
+        background: rgba(251, 210, 61, .25);
+        border-radius: 5px;
+        backdrop-filter: blur(10px);
+        span {
+            color: #feb112;
+            filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+            font-weight: 800;
+        }
+    }
+
+    .autobot_btn {
+        position: absolute;
+        bottom: 100px;
+        left: 10px;
+        right: 10px;
+        width: auto;
+        z-index: 1;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        //color: #ffbe16;
+        //background: rgba(255, 190, 21, .5);
+        background: rgba(251, 210, 61, .25);
+        border-radius: 5px;
+        backdrop-filter: blur(10px);
+        span {
+            color: #feb112;
+            filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+            font-weight: 800;
+        }
+    }
+
+    .autobot_panel {
+        position: absolute;
+        bottom: 100px;
+        left: 10px;
+        right: 10px;
+        width: auto;
+        z-index: 1;
+        padding: 15px;
+        background: rgba(148, 35, 255, .25);
+        border-radius: 5px;
+        backdrop-filter: blur(10px);
+        & > span {
+            font-family: "Open Sans", sans-serif;
+            color: #ffffff;
+            filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+            font-weight: 800;
+        }
+
+        .mining_info {
+            position: absolute;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: "Open Sans", sans-serif;
+            span {
+                font-size: 12px;
+                display: block;
+                margin-bottom: 5px;
+                text-transform: uppercase;
+                font-weight: 800;
+                opacity: 0.5;
+            }
+            & > div {
+                display: flex;
+                flex-wrap: wrap;
+
+                span, b {
+                    font-size: 14px;
+                    opacity: 0.75;
+                    margin: 0;
+                    font-weight: 500;
+                }
+                b {
+                    margin-left: 5px;
+                    opacity: 0.75;
+                }
+            }
+        }
+        
+        .switch_bot {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translate(0, -50%);
+            width: 30px;
+            border-radius: 5px;
+            padding: 5px 0;
+            //background: rgba(0, 0, 0, .5);
+            background: rgba(84, 13, 30, .5);
+            .tumbler {
+                position: absolute;
+                top: 50%;
+                left: -5px;
+                width: 20px;
+                height: 20px;
+                background: #c20847;
+                border-radius: 50%;
+                transform: translate(0, -50%);
+                filter: drop-shadow(0px 0px 5px #c20847);
+                transition: all .2s;
+            }
+            &.active {
+                background: rgba(19, 98, 61, .5);
+                .tumbler {
+                    left: 15px;
+                    background: #198754;
+                    filter: drop-shadow(0px 0px 5px #198754);
+                }
+            }
+        }
+
+    }
+
+    .partners_btn {
+        position: absolute;
+        bottom: 100px;
+        left: calc(50% + 8px);;
+        right: 10px;
+        width: auto;
+        z-index: 1;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        background: rgba(148, 35, 255, .25);
+        border-radius: 5px;
+        backdrop-filter: blur(10px);
+        span {
+            color: #ffffff;
+            filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+            font-weight: 800;
+        }
+    }
+
+    .autobot {
+        position: absolute;
+        top: 15px;
+        left: 10px;
+        right: 10px;
+        bottom: 160px;
+        z-index: 1;
+        pointer-events: none;
+        //opacity: 1;
+        //transition: all 0.2s;
+        img {
+            display: block;
+            max-width: 100%;
+            max-height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            &.autobot_eyes {
+                opacity: 0;
+                transition: all 0.2s;
+                &.active {
+                    opacity: 1;
+                }
+            }
+        }
+        &.hide {
+            opacity: 0;
+        }
+    }
+
+    .startMining {
+        position: absolute;
+        top: -240px;
+        left: -240px;
+        border: 0;
+        margin: 0;
+        border-radius: 50%;
+        //background-image: url('../img/coin.png');
+        //background-size: contain;
+        background-color: initial;
+        max-width: 240px;
+        max-height: 240px;
+        height: 25%;
+        padding: 0;
+        touch-action: none;
+        z-index: 1;
+        //box-shadow: 0px -5px 0px 1px #e48c09;
+        //transition: all $animation_speed;
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        span {
+            display: none;
+        }
+        &.push {
+            transform: scale(0.95);
+            box-shadow: 0 0 10px 5px #ffbe16;
+            //filter: drop-shadow(rgb(255, 190, 22) 0px 0px 5px);
+        }
+        &.hide {
+            opacity: 0;
+            pointer-events: none;
+        }
+    }
+
+    /* Animations */
+    @keyframes bg-scrolling-reverse {
+        100% {
+            background-position: $bg-width $bg-height;
+        }
+    }
+
+    @keyframes bg-scrolling {
+        0% {
+            background-position: $bg-width $bg-height;
+        }
+    }
+
+    #bg, #bg-active {
+        background-size: 480px;
+        color: #eee;
+        transition: all $animation_speed;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    #bg {
+        background: url($bg-url) repeat 0 0;
+        animation: bg-scrolling-reverse 6s linear infinite;
+        opacity: 1;
+        &.hide {
+            opacity: 0;
+        }
+    }
+
+    #bg-active {
+        background: url($bg-url-active) repeat 0 0;
+        animation: bg-scrolling-reverse 2s linear infinite;
+        opacity: 0;
+        &.show {
+            opacity: 1;
+        }
+    }
+
+    @keyframes scroll {
+        100% {
+            background-position: 0px 500%;
+        }
+    }
+}
+
+
+.boosts_list {
+    padding-bottom: 15px;
+    .boost {
+        position: relative;
+        //overflow: hidden;
+        background: rgba(120, 120, 120, 0.25);
+        border-radius: 25px;
+
+        & + .boost {
+            margin-top: 33px;
+        }
+
+        .boost_data {
+            padding: 5px 0 5px 80px;
+            margin: 28px 0;
+            //padding-left: 80px;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+
+            .image {
+                position: absolute;
+                left: 0;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: initial;
+                overflow: hidden;
+
+                img, svg {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+
+            .text {
+                width: calc(100% - 30px - 33%);
+                padding-left: 15px;
+                padding-right: 15px;
+
+                & > h3 {
+                    font-size: 16px;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+
+                & > span {
+                    display: block;
+                    margin-top: 2px;
+                    line-height: 1.4;
+                    font-size: 14px;
+                    opacity: .5;
+                }
+            }
+
+            .button {
+                position: absolute;
+                top: 5px;
+                bottom: 5px;
+                right: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 33%;
+                height: auto;
+                border-radius: 25px;
+                margin: 0;
+                padding: 0 10px;
+            }
+        }
+    }
+}
+
+.modal .partners_list .partner.halva .partner_banner {
+    background-color: #ccf9ff;
+}

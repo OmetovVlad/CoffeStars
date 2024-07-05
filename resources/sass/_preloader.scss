@@ -1,0 +1,51 @@
+.preloader {
+	position: fixed;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 5;
+	background: #26244b;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	opacity: 1;
+	transition: all 0.5s;
+	&.hide {
+		top: -100vh;
+		pointer-events: none;
+	}
+
+	.progressBar {
+		padding: 5px 2px;
+		border-radius: 3px;
+		background: #34316a;
+		transform: skew(-5deg);
+		width: 90%;
+		position: relative;
+		&::after {
+			content: '';
+			background: #ffffff;
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			border-radius: 3px;
+			filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, .5));
+			animation-duration: 4500ms;
+			animation-name: progressBar;
+			animation-fill-mode: forwards;
+		}
+	}
+}
+
+@keyframes progressBar {
+	from {
+		width: 0;
+	}
+
+	to {
+		width: 100%;
+	}
+}

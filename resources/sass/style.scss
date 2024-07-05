@@ -1,0 +1,128 @@
+// Normalize.css
+// @import "../../node_modules/normalize.css/normalize";
+// Bootstrap
+// @import '../../node_modules/bootstrap/scss/bootstrap-grid';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+// Шрифты
+// Удалить файл fonts.scss, если произошли какие-то изменения со шрифтами
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import "fonts";
+
+// Переменны (цвета, скорость transition и пр)
+@import "_variables";
+
+@import "_ui";
+@import "_header";
+@import "_app";
+@import "_shop";
+@import "_isNotMobile";
+@import "_comingSoon";
+@import "_profile";
+@import "_withdraw";
+@import "_login";
+@import "_friends";
+@import "_preloader";
+@import "_footer";
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello", serif;
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-user:before { content: '\e800'; } /* '' */
+.icon-login:before { content: '\e801'; } /* '' */
+.icon-wallet:before { content: '\e802'; } /* '' */
+.icon-gamepad:before { content: '\f11b'; } /* '' */
+.icon-shopping-bag:before { content: '\f290'; } /* '' */
+
+*{
+  outline: none;
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-tap-highlight-color:transparent!important;
+}
+
+::placeholder {
+  color: #8892b0;
+  opacity: 1;
+}
+
+::-ms-input-placeholder {
+  color: #8892b0;
+}
+
+html, body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1, h2, h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 15px 0;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 360px;
+  font-family: $main_font;
+  line-height: 1;
+  background: #1c1a3f;
+  color: #fff;
+  main {
+    position: fixed;
+    left: 0;
+    width: 100vw;
+    bottom: 0;
+    top: 60px;
+    &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 60px;
+      background: linear-gradient(180deg, #fff0, #1c1a3f);
+      z-index: 1;
+      pointer-events: none;
+    }
+  }
+
+  .pageWrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    padding: 15px 10px 110px;
+    overflow: auto;
+    &.hide {
+      opacity: 0;
+      pointer-events: none;
+    }
+    & > h2:first-child{
+      margin-top: 0;
+    }
+  }
+}

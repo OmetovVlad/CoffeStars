@@ -1,0 +1,30 @@
+#login {
+    position: fixed;
+    top: 44px;
+    right: 0;
+    bottom: 67px;
+    left: 0;
+    z-index: 1;
+    // backdrop-filter: blur(5px);
+    // background: linear-gradient(157deg, $color_top 2.22%, $color_bottom 85.07%);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    .content {
+        padding: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        // color: $color_white;
+        text-align: center;
+        h2 {
+            font-size: 40px;
+            margin: 0 0 30px;
+            width: 100%;
+        }
+        p {
+            margin: 0 0 30px;
+        }
+    }
+}

@@ -1,0 +1,140 @@
+{
+  "resources/fonts/HelveticaRegular.woff": {
+    "file": "assets/HelveticaRegular-B3nQJYmr.woff",
+    "src": "resources/fonts/HelveticaRegular.woff"
+  },
+  "resources/fonts/HelveticaRegular.woff2": {
+    "file": "assets/HelveticaRegular-CurQpRrn.woff2",
+    "src": "resources/fonts/HelveticaRegular.woff2"
+  },
+  "resources/fonts/fontello.woff": {
+    "file": "assets/fontello-CVBE5DFx.woff",
+    "src": "resources/fonts/fontello.woff"
+  },
+  "resources/fonts/fontello.woff2": {
+    "file": "assets/fontello-BQbPvriN.woff2",
+    "src": "resources/fonts/fontello.woff2"
+  },
+  "resources/img/autobot.svg": {
+    "file": "assets/autobot-CG4gQlcN.svg",
+    "src": "resources/img/autobot.svg"
+  },
+  "resources/img/autobot_eyes.png": {
+    "file": "assets/autobot_eyes-mUogLzBq.png",
+    "src": "resources/img/autobot_eyes.png"
+  },
+  "resources/img/autobot_eyes.svg": {
+    "file": "assets/autobot_eyes-DTSwWaEm.svg",
+    "src": "resources/img/autobot_eyes.svg"
+  },
+  "resources/img/circle-mob.png": {
+    "file": "assets/circle-mob-C70Wmdln.png",
+    "src": "resources/img/circle-mob.png"
+  },
+  "resources/img/coin.png": {
+    "file": "assets/coin-BCRde2Hl.png",
+    "src": "resources/img/coin.png"
+  },
+  "resources/img/coin_0.png": {
+    "file": "assets/coin_0-Ebnmm9Fq.png",
+    "src": "resources/img/coin_0.png"
+  },
+  "resources/img/coin_0_old.png": {
+    "file": "assets/coin_0_old-BUrmFj6u.png",
+    "src": "resources/img/coin_0_old.png"
+  },
+  "resources/img/coin_1.png": {
+    "file": "assets/coin_1-C6rAc2qt.png",
+    "src": "resources/img/coin_1.png"
+  },
+  "resources/img/coin_10.png": {
+    "file": "assets/coin_10-BT9gT6xn.png",
+    "src": "resources/img/coin_10.png"
+  },
+  "resources/img/coin_10_old.png": {
+    "file": "assets/coin_10_old-CP-torqU.png",
+    "src": "resources/img/coin_10_old.png"
+  },
+  "resources/img/coin_2.png": {
+    "file": "assets/coin_2-CiKGM69k.png",
+    "src": "resources/img/coin_2.png"
+  },
+  "resources/img/coin_3.png": {
+    "file": "assets/coin_3-S7abXDKu.png",
+    "src": "resources/img/coin_3.png"
+  },
+  "resources/img/coin_4.png": {
+    "file": "assets/coin_4-BMJ9lB8K.png",
+    "src": "resources/img/coin_4.png"
+  },
+  "resources/img/coin_5.png": {
+    "file": "assets/coin_5-CU9WyzcE.png",
+    "src": "resources/img/coin_5.png"
+  },
+  "resources/img/coin_6.png": {
+    "file": "assets/coin_6-BwjFC6fL.png",
+    "src": "resources/img/coin_6.png"
+  },
+  "resources/img/coin_7.png": {
+    "file": "assets/coin_7-BhCuZfSf.png",
+    "src": "resources/img/coin_7.png"
+  },
+  "resources/img/coin_8.png": {
+    "file": "assets/coin_8-DWogvu5Q.png",
+    "src": "resources/img/coin_8.png"
+  },
+  "resources/img/coin_9.png": {
+    "file": "assets/coin_9-BScwp3_8.png",
+    "src": "resources/img/coin_9.png"
+  },
+  "resources/img/coin_egg.png": {
+    "file": "assets/coin_egg-C1sFKgTs.png",
+    "src": "resources/img/coin_egg.png"
+  },
+  "resources/img/coin_min.png": {
+    "file": "assets/coin_min-Bf3-QPQ9.png",
+    "src": "resources/img/coin_min.png"
+  },
+  "resources/img/coins_1.png": {
+    "file": "assets/coins_1-B-0EEcom.png",
+    "src": "resources/img/coins_1.png"
+  },
+  "resources/img/coins_2.png": {
+    "file": "assets/coins_2-N2IiZwNZ.png",
+    "src": "resources/img/coins_2.png"
+  },
+  "resources/img/dollar-pattern.png": {
+    "file": "assets/dollar-pattern-BuQG1osz.png",
+    "src": "resources/img/dollar-pattern.png"
+  },
+  "resources/img/dollar-pattern_min.png": {
+    "file": "assets/dollar-pattern_min-tnTvI91h.png",
+    "src": "resources/img/dollar-pattern_min.png"
+  },
+  "resources/img/logo-1.svg": {
+    "file": "assets/logo-1-Dc-dtJGK.svg",
+    "src": "resources/img/logo-1.svg"
+  },
+  "resources/img/logo-2.svg": {
+    "file": "assets/logo-2-z2_Ut_-_.svg",
+    "src": "resources/img/logo-2.svg"
+  },
+  "resources/img/logo-3.svg": {
+    "file": "assets/logo-3-mt1fkpa-.svg",
+    "src": "resources/img/logo-3.svg"
+  },
+  "resources/img/qr-code.svg": {
+    "file": "assets/qr-code-C-DIrwn-.svg",
+    "src": "resources/img/qr-code.svg"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-CQHHqC6Y.js",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/sass/style.scss": {
+    "file": "assets/style-B0ad9SYR.css",
+    "src": "resources/sass/style.scss",
+    "isEntry": true
+  }
+}

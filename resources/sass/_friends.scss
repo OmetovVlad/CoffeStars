@@ -1,0 +1,679 @@
+#friends {
+
+}
+
+.partners_list {
+	.partner {
+		position: relative;
+		overflow: hidden;
+		background: rgba(120, 120, 120, 0.25);
+		border-radius: 25px;
+		& + .partner {
+			margin-top: 15px;
+		}
+		.partner_banner {
+			position: relative;
+			padding: 10px 15px;
+			height: 200px;
+			overflow: hidden;
+			.text {
+				margin-top: 10px;
+				width: 100%;
+				span {
+					display: block;
+					text-transform: uppercase;
+					font-family: "Open Sans", sans-serif;
+					font-weight: 600;
+					font-size: 12px;
+					letter-spacing: 1px;
+					opacity: 0.75;
+				}
+				h3 {
+					font-size: 26px;
+					margin-top: 5px;
+					margin-bottom: 0;
+					line-height: 1;
+				}
+			}
+			.reward {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				padding: 10px 15px;
+				//border-radius: 0 20px 0 0;
+				//background: #ef3124;
+				//color: #fff;
+				span {
+					display: block;
+					text-transform: uppercase;
+					font-family: "Open Sans", sans-serif;
+					font-weight: 600;
+					font-size: 12px;
+					letter-spacing: 1px;
+					opacity: .75;
+				}
+				b {
+					display: block;
+					margin-top: 5px;
+					font-family: "Open Sans", sans-serif;
+					font-weight: 600;
+					font-size: 30px;
+					padding: 10px 10px;
+					border-radius: 10px;
+					background: #16181d;
+					color: #00a5fc;
+				}
+			}
+		}
+		.partner_data {
+			padding: 10px 15px;
+			display: flex;
+			flex-wrap: nowrap;
+			align-items: center;
+			.logo {
+				position: relative;
+				width: 60px;
+				height: 60px;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background: #fff;
+				overflow: hidden;
+				img, svg {
+					max-width: 80%;
+					max-height: 80%;
+				}
+			}
+			.text {
+				width: calc(100% - 60px);
+				padding-left: 15px;
+				h3 {
+					font-size: 16px;
+					margin-top: 0;
+					margin-bottom: 0;
+				}
+				span {
+					display: block;
+					margin-top: 2px;
+					line-height: 1.4;
+					font-size: 14px;
+					opacity: .5;
+				}
+			}
+		}
+
+		&.black {
+			.partner_banner {
+				color: #000;
+			}
+		}
+
+		&.svoi {
+			.partner_banner {
+				background-image: url('https://svoi.ru/static/3e7b4d8b9afb98e281a52084478ee912/77253/card-kb20-mobile-bg.png');
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: top right;
+				background-color: #62169d;
+				.reward {
+					b {
+						background: #fafafa;
+						color: #621a9d;
+					}
+				}
+			}
+			.partner_data {
+				.logo {
+					background-color: #9638e3;
+				}
+			}
+		}
+
+		&.mts {
+			.partner_banner {
+				background-image: url('https://www.mtsbank.ru/upload/static/documents/portal-frontend-cards/debet-mts-card/banner.jpg');
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center right -90px;
+				background-color: rgb(208, 209, 214);
+				.reward {
+					b {
+						background: #ffffff;
+						color: #e22613;
+					}
+				}
+			}
+			.partner_data{
+				.logo {
+					//background: rgb(227, 6, 17);
+					background: #fff;
+					svg {
+						max-height: 100%;
+						max-width: 100%;
+					}
+				}
+			}
+		}
+
+		&.mts-credit {
+			.partner_banner {
+				background-image: url('https://www.mtsbank.ru/upload/static/products/vse-karti/debet-card-cashback/credit-cashback-deskt.webp');
+				background-repeat: no-repeat;
+				background-size: 640px;
+				background-position: center right -110px;
+				background-color: rgb(204, 216, 254);
+				.reward {
+					b {
+						background: #e22613;
+						color: #ffffff;
+					}
+				}
+			}
+			.partner_data{
+				.logo {
+					//background: rgb(227, 6, 17);
+					background: #fff;
+					svg {
+						max-height: 100%;
+						max-width: 100%;
+					}
+				}
+			}
+		}
+
+		&.alfabank {
+			.partner_banner {
+				background-image: url('https://alfabank.servicecdn.ru/site-upload/42/6e/212/D_MB_564x450_11032024.png');
+				background-repeat: no-repeat;
+				background-size: 180px;
+				background-position: center right -20px;
+				background-color: #d6e6fe;
+				.reward {
+					b {
+						background: #ef3124;
+						color: #ffffff;
+					}
+				}
+			}
+			.partner_data{
+				.logo {
+					background: #ef3124;
+					svg {
+						max-height: 50%;
+					}
+				}
+			}
+		}
+
+		&.fingerplay {
+			.partner_banner {
+				background-image: url('https://fingerplay.online/images/banners/banner05.jpg');
+				background-repeat: no-repeat;
+				//background-size: 180px;
+				background-size: cover;
+				background-position: center right -20px;
+				background-color: #1c1a3f;
+				.reward {
+					b {
+						background: #7364fd;
+						color: #ffffff;
+					}
+				}
+			}
+			.partner_data{
+				.logo {
+					background: #7364fd;
+					svg {
+						max-height: 50%;
+					}
+				}
+			}
+		}
+
+		&.alfabank-credit {
+			.partner_banner {
+				background-image: url('https://alfabank.servicecdn.ru/site-upload/9b/bd/6845/main-desktop.png');
+				background-repeat: no-repeat;
+				background-size: 200px;
+				background-position: bottom right;
+				background-color: #000;
+				.reward {
+					b {
+						background: #ef3124;
+						color: #ffffff;
+					}
+				}
+			}
+			.partner_data{
+				.logo {
+					background: #ef3124;
+					svg {
+						max-height: 50%;
+					}
+				}
+			}
+		}
+
+		&.gazprombank {
+			.partner_banner {
+				background-image: url('https://cdn.gpb.ru/upload/files/iblock/946/x1_Advantages_Second_DK_1200x960-_2_.png');
+				background-repeat: no-repeat;
+				background-size: 200px;
+				background-position: center right -20px;
+				background-color: #f4f6fa;
+				.reward {
+					b {
+						background: #476bf0;
+						color: #fff;
+					}
+				}
+			}
+			.partner_data{
+				.logo {
+					background: #476bf0;
+					svg {
+						width: 60%;
+						height: 60%;
+					}
+				}
+			}
+		}
+
+		&.tinkoff_all_games {
+			.partner_banner {
+				background-image: url('https://acdn.tinkoff.ru/static/pages/files/60786b96-0f55-4c98-9aec-c2aa7470ad49.webp');
+				background-repeat: no-repeat;
+				background-size: 200px;
+				background-position: bottom right -15px;
+				background-color: #fff;
+				.reward {
+					b {
+						background: #ffdd2d;
+						color: #323232;
+					}
+				}
+			}
+			.partner_data{
+				.logo {
+					background: #476bf0;
+					img {
+						max-width: 100%;
+						max-height: 100%;
+					}
+				}
+			}
+		}
+
+		&.tinkoff_platinum {
+			.partner_banner {
+				background-image: url('https://acdn.tinkoff.ru/static/pages/files/25767552-3cde-43e3-9a86-44eaf7b522c5.webp');
+				background-repeat: no-repeat;
+				background-size: 240px;
+				background-position: center right -40px;
+				background-color: #fff;
+				.reward {
+					b {
+						background: #ffdd2d;
+						color: #323232;
+					}
+				}
+			}
+			.partner_data{
+				.logo {
+					background: #476bf0;
+					img {
+						max-width: 100%;
+						max-height: 100%;
+					}
+				}
+			}
+		}
+
+		&.halva {
+			.partner_banner {
+				position: relative;
+				background-image: url('https://gethalva.ru/static/bf7156b067c470f6379abcf16aa25c30/c9c7e/banner_card.png');
+				background-repeat: no-repeat;
+				background-size: 320px;
+				background-position: center right -93px;
+				background-color: initial;
+				.reward {
+					b {
+						background: #f4f4f4;
+						color: #292a30;
+					}
+				}
+				&::after {
+					content: '';
+					display: block;
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background: linear-gradient(277.27deg, #c653f3, #ccf9ff);
+					z-index: -1;
+				}
+
+			}
+			.partner_data{
+				.logo {
+					background: #fff;
+					img {
+						max-width: 70%;
+						max-height: 70%;
+					}
+				}
+			}
+		}
+
+		&.vtb {
+			.partner_banner {
+				background-image: url('https://www.vtb.ru/media-files/vtb.ru/sitepages/Karty_C_SalaryCard_1x.webp');
+				background-repeat: no-repeat;
+				background-size: 160px;
+				background-position: center right 15px;
+				background-color: #16181d;
+				.reward {
+					b {
+						background: #00a5fc;
+						color: #f3f7fa;
+					}
+				}
+			}
+			.partner_data{
+				.logo {
+					background: #16181d;
+					img {
+						max-width: 50%;
+						max-height: 50%;
+					}
+				}
+			}
+		}
+
+		&.vtb-credit {
+			.partner_banner {
+				background-image: url('https://www.vtb.ru/media-files/vtb.ru/shared/images/hero/Karty_H_CreditCard_200_days_1x.webp');
+				background-repeat: no-repeat;
+				background-size: 280px;
+				background-position: center right -72px;
+				background-color: #f3f7fa;
+				.reward {
+					b {
+						background: #00a5fc;
+						color: #f3f7fa;
+					}
+				}
+			}
+			.partner_data{
+				.logo {
+					background: #16181d;
+					img {
+						max-width: 50%;
+						max-height: 50%;
+					}
+				}
+			}
+		}
+
+		&.ubrr {
+			.partner_banner {
+				background-image: url('https://www.ubrr.ru/sites/default/files/ue/img-head_14.png');
+				background-repeat: no-repeat;
+				background-size: 330px;
+				background-position: center right -110px;
+				background-color: #fff2f2;
+				.reward {
+					b {
+						background: #a41b46;
+						color: #fff2f2;
+					}
+				}
+			}
+			.partner_data{
+				.logo {
+					background: #f5f4f4;
+					img {
+						max-width: 50%;
+						max-height: 50%;
+					}
+				}
+			}
+		}
+
+	}
+}
+
+.accrualBalance {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: end;
+	justify-content: left;
+	margin-top: 16px;
+	padding: 5px 10px;
+	background: #26244b;
+	border-radius: 5px;
+	.icon {
+		margin-right: 10px;
+		padding: 3px 0;
+		img {
+			display: block;
+			width: 40px;
+			height: 40px;
+		}
+	}
+	span {
+		display: block;
+		font-family: "Open Sans", sans-serif;
+		line-height: 1;
+		font-weight: 800;
+		font-size: 30px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.infoIcon {
+		display: flex;
+		margin-left: auto;
+		padding-left: 10px;
+		margin-top: 16px;
+		height: 30px;
+		align-items: center;
+		opacity: 0.5;
+		svg {
+			display: block;
+			width: 20px;
+			height: 20px;
+			transform: rotate3d(1, 0, 0, 180deg);
+			//transition: all linear 0.1s;
+		}
+	}
+	&:before {
+		content: 'Будет начислено';
+		font-family: "Open Sans", sans-serif;
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 1;
+		color: rgba(255, 255, 255, 0.5);
+		position: absolute;
+		top: 7px;
+		left: 60px;
+	}
+
+	.info {
+		display: none;
+		width: 100%;
+		padding: 15px 0 5px;
+		margin-top: 5px;
+		border-top: 1px solid rgba(255, 255, 255, 0.25);
+		p {
+			margin: 0;
+			&.l1 {
+				font-size: 20px;
+			}
+			&.l2 {
+				font-size: 18px;
+			}
+			&.l3 {
+				font-size: 16px;
+			}
+			&.l4 {
+				font-size: 14px;
+			}
+			&.l5 {
+				font-size: 12px;
+			}
+			&.l6 {
+				font-size: 12px;
+			}
+			& + p {
+				margin-top: 10px;
+			}
+		}
+	}
+
+	&.open {
+		.infoIcon {
+			svg {
+				transform: rotate3d(1, 0, 0, 0deg);
+			}
+		}
+		.info {
+			display: block;
+		}
+	}
+}
+
+.referralTree {
+	//margin-top: -12px;
+	.line {
+		display: flex;
+		flex-wrap: wrap;
+		position: relative;
+		.arrow {
+			position: absolute;
+			left: 50%;
+			top: 55px;
+			z-index: 1;
+			display: flex;
+			align-items: center;
+			border-radius: 5px;
+			padding: 8px;
+			//background: #0954c2;
+			color: #ffffff;
+			transform: skewX(-5deg) translate(-50%, 0);
+			pointer-events: none;
+			svg {
+				width: 14px;
+				transform: skewX(5deg) rotate3d(1, 0, 0, 180deg);
+				//transition: all linear 0.2s;
+			}
+			&.open {
+				svg {
+					width: 14px;
+					transform: skewX(5deg) rotate3d(1, 0, 0, 0deg);
+				}
+			}
+		}
+		.name {
+			position: relative;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			width: 100%;
+			padding: 12px 0;
+			font-size: 14px;
+			font-weight: 500;
+			color: #ffffff;
+			&:after {
+				content: '';
+				position: absolute;
+				display: block;
+				width: 100%;
+				border-top: 1px dashed #ffbe16;
+				bottom: 37px;
+				opacity: .2;
+			}
+			.username {
+				display: block;
+				width: 100%;
+				margin-bottom: 5px;
+				font-family: "Open Sans", sans-serif;
+				line-height: 1.5;
+				font-weight: 800;
+				font-size: 18px;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+			.balance {
+				position: relative;
+				display: block;
+				font-family: "Open Sans", sans-serif;
+				font-weight: 300;
+				letter-spacing: 1px;
+				padding-top: 18px;
+				width: 50%;
+				&:before {
+					content: 'За неделю';
+					display: block;
+					padding: 0 3px;
+					//width: 100%;
+					position: absolute;
+					z-index: 1;
+					top: 0;
+					left: -3px;
+					font-family: "Open Sans", sans-serif;
+					font-weight: 600;
+					font-size: 12px;
+					line-height: 1;
+					color: rgba(255, 255, 255, 0.5);
+					background: #1c1a3f;
+				}
+
+				& + .balance {
+					text-align: right;
+					&:before {
+						content: 'Будет начислено';
+						text-align: right;
+						left: initial;
+						right: -3px;
+					}
+				}
+			}
+		}
+		.sub {
+			display: block;
+			padding-left: 15px;
+			width: 100%;
+			border-top: 1px solid rgba(255, 255, 255, .25);
+			max-height: 0;
+			overflow: hidden;
+			opacity: 0;
+			transition: max-height 0.3s linear;
+			&.open {
+				opacity: 1;
+				max-height: initial;
+				margin-top: 1px;
+			}
+			.line {
+				min-height: 0;
+				.name {
+					.username {
+
+					}
+					.balance {
+
+					}
+				}
+			}
+		}
+
+		& + .line {
+			border-top: 1px solid rgba(255, 255, 255, .5);
+		}
+	}
+}
