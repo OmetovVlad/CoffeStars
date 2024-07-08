@@ -123,8 +123,12 @@
     "file": "assets/logo-3-mt1fkpa-.svg",
     "src": "resources/img/logo-3.svg"
   },
+  "resources/img/logo.png": {
+    "file": "assets/logo-BhiwSNvx.png",
+    "src": "resources/img/logo.png"
+  },
   "resources/img/qr-code.svg": {
-    "file": "assets/qr-code-C-DIrwn-.svg",
+    "file": "assets/qr-code-xsXlxZ_s.svg",
     "src": "resources/img/qr-code.svg"
   },
   "resources/js/app.js": {
